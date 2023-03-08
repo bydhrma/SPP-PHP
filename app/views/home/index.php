@@ -1,6 +1,6 @@
 <div class="content" style="width: 100%;">
   <div class="container mt-4">
-    <h2 class="mb-4">Dashboard</h2>
+    <h2 class="mb-4">Selamat Datang di Dashboard,<?= $data['nama'];?></h2>
 
     <div class="row">
 
@@ -67,6 +67,17 @@
         </div>
     </div>
 </div>
+
+
 </div>
-  </div>
+    <!-- <div class="mt-4 d-flex">
+        <video width="540" height="380" controls class="">
+            <source src="https://youtu.be/4NRXx6U8ABQ" type="video/mp4"></source>
+        </video>
+        <div class="ml-2">
+            <h1>content</h1>
+        </div>
+    </div> -->
+
+</div>
 </div>

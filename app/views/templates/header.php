@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?=$data['judul']?></title>
   <link rel="stylesheet" href="<?=BASEURL;?>startbootstrap-sb-admin-2-gh-pages/css/sb-admin-2.min.css">
-  <link rel="stylesheet" href="<?=BASEURL;?>startbootstrap-sb-admin-2-gh-pages/css/custom.css">
+  <link rel="stylesheet" href="<?=BASEURL;?>startbootstrap-sb-admin-2-gh-pages/css/styles.css">
   
   <link href="<?=BASEURL;?>startbootstrap-sb-admin-2-gh-pages/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -16,10 +16,10 @@
 <div id="wrapper">
 
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?=BASEURL;?>">
         <div class="sidebar-brand-text mx-3">SPP Managements</div>
     </a>
 
@@ -45,18 +45,22 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Form Management</h6>
-                <a class="collapse-item" href="login.html">Data Siswa</a>
-                <a class="collapse-item" href="register.html">Data Pengguna</a>
+                <a class="collapse-item" href="<?=BASEURL;?>Kelas">Data Kelas</a>
+                <a class="collapse-item" href="<?=BASEURL;?>Siswa">Data Siswa</a>
                 <a class="collapse-item" href="forgot-password.html">Data Petugas</a>
-                <a class="collapse-item" href="404.html">Data Pengguna</a>
-                <a class="collapse-item" href="blank.html">Data Kelas</a>
-                <a class="collapse-item" href="blank.html">Pembayaran</a>
-                <a class="collapse-item" href="blank.html">SPP</a>
+                <a class="collapse-item" href="register.html">Data Pengguna</a>
+                <a class="collapse-item" href="blank.html">Tahun Ajaran</a>
             </div>
         </div>
     </li>
 
     <!-- Nav Item - Charts -->
+    <li class="nav-item ">
+        <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Entri Transaksi</span></a>
+    </li>
+    
     <li class="nav-item ">
         <a class="nav-link" href="charts.html">
             <i class="fas fa-fw fa-chart-area"></i>
