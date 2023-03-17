@@ -2,14 +2,19 @@
             <h1 class="h3 mb-4">Data Kelas</h1>
 
                 <!-- Input Kelas -->
-                <div class="card shadow">
-                    <div class="card-header">
-                        <h6 class="m-0 font-weight-bold text-primary">Tambah Kelas</h6>
-                    </div>
-                    <div class="card-body">
+                <form class=""action="<?=BASEURL?>kelas/insert" method="post">
+                    <div class="card shadow">
+                        <div class="card-header d-flex justify-content-between">
+                            <div class="d-inline mt-2">
+                                <h6 class="font-weight-bold text-primary">Tambah Kelas</h6>
+                            </div>
+                            <div class="d-inline">
+                                <button class="btn btn-outline-primary" type="submit" name="tambahKelas">Tambah Kelas</button>
+                            </div>
+                        </div>
 
-                        <!-- tambah kelas form-->
-                        <form class=""action="<?=BASEURL?>kelas/insert" method="post">
+                    <div class="card-body">
+                        <!-- add class form-->
                             <div class="row col-md-10">
                                 <label for="kelas">Kelas</label>
                                 <input type="text" class="form-control mb-4" placeholder="Nama Kelas" name="nama">
@@ -20,10 +25,9 @@
                                 <input type="text" class="form-control mb-4" placeholder="Kompetensi Keahlian" name="kompetensi_keahlian">
                             </div>
                     </div>
-
-                            <div class="card-footer d-flex justify-content-end">
-                                    <button class="btn btn-primary mr-2" type="submit" name="tambahKelas">Tambah Kelas</button>
-                            </div>
+                    <div class="card-footer">
+                        <div class="mb-3"></div>
+                    </div>
                         </form>
                     <!-- end form kelas -->
                 </div>

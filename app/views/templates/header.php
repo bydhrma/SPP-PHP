@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?=$data['judul']?></title>
-  <link rel="stylesheet" href="<?=BASEURL;?>startbootstrap-sb-admin-2-gh-pages/css/sb-admin-2.min.css">
-  <link rel="stylesheet" href="<?=BASEURL;?>startbootstrap-sb-admin-2-gh-pages/css/styles.css">
+  <link rel="stylesheet" href="<?=BASEURL;?>startbootstrap-sb-admin-2-gh-pages/css/sb-admin-2.css">
+  
   
   <link href="<?=BASEURL;?>startbootstrap-sb-admin-2-gh-pages/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -16,70 +16,77 @@
 <div id="wrapper">
 
 <!-- Sidebar -->
-<ul class="navbar-nav bg-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gradient-white sidebar sidebar-dark accordion shadow" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?=BASEURL;?>">
-        <div class="sidebar-brand-text mx-3">SPP Managements</div>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center mb-3" href="<?=BASEURL;?>">
+        <div class="text-primary h3 mt-4 mx-3">S<b class="font-weight-light text-dark">pay</b></div>
     </a>
 
     <!-- Divider -->
     
+    
+    
 
     <!-- Nav Item - Dashboard -->
-    <li class="nav-item  active mt-4">
-        <a class="nav-link" href="<?=BASEURL?>">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
+    <li class="nav-item active">
+        <a class="nav-link text-dark" href="<?=BASEURL?>">
             <span>Dashboard</span></a>
     </li>
 
+    <hr class="sidebar-divider bg-gray-300 my-0 mb-2 mx-3">
+    <div class="sidebar-heading mt-2 text-primary">Management Data</div>
 
-
-    <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item ">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-            aria-expanded="true" aria-controls="collapsePages">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Form</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Form Management</h6>
-                <a class="collapse-item" href="<?=BASEURL;?>Kelas">Data Kelas</a>
-                <a class="collapse-item" href="<?=BASEURL;?>Siswa">Data Siswa</a>
-                <a class="collapse-item" href="forgot-password.html">Data Petugas</a>
-                <a class="collapse-item" href="register.html">Data Pengguna</a>
-                <a class="collapse-item" href="blank.html">Tahun Ajaran</a>
-            </div>
-        </div>
+    <li class="nav-item">
+            <a class="nav-link text-dark" href="<?=BASEURL?>Kelas">
+                <span>Data Kelas</span></a>
     </li>
 
-    <!-- Nav Item - Charts -->
     <li class="nav-item ">
-        <a class="nav-link" href="charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
+            <a class="nav-link text-dark" href="<?=BASEURL?>Kelas">
+                <span>Data Pengguna</span></a>
+    </li>
+
+    <li class="nav-item ">
+            <a class="nav-link text-dark" href="<?=BASEURL?>Kelas">
+                <span>Data Petugas</span></a>
+    </li>
+
+    <li class="nav-item ">
+            <a class="nav-link text-dark" href="<?=BASEURL?>Kelas">
+                <span>Data Siswa</span></a>
+    </li>
+
+    
+    
+    
+
+
+    <hr class="sidebar-divider bg-gray-300 my-0 mb-2 mx-3">
+    <div class="sidebar-heading mt-2 text-primary">Transaction Management</div>
+
+    <li class="nav-item ">
+        <a class="nav-link text-dark" href="charts.html">
             <span>Entri Transaksi</span></a>
     </li>
     
     <li class="nav-item ">
-        <a class="nav-link" href="charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
+        <a class="nav-link text-dark" href="charts.html">
             <span>History</span></a>
     </li>
 
     <!-- Nav Item - Tables -->
-    <li class="nav-item  mb-4">
-        <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
+    <li class="nav-item ">
+        <a class="nav-link text-dark" href="tables.html">
             <span>Laporan</span></a>
     </li>
 
     <!-- Divider -->
-    <hr class="sidebar-divider d-none d-md-block mb-4">
+    <hr class="sidebar-divider d-none bg-gray-300 d-md-block mb-4">
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        <button class="btn btn-outline-primary bg-gradient-primary" id="sidebarToggle"></button>
     </div>
 
 
